@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Chwerk - skłep internet usług</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/registration.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header id="header">
+        <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <a class="menu-category menu-category_login" href="">
+         <img src="img/sign-in.png" width="30" height="30">
+     </a>
+     <div class="chmenubutton">
+        <div class=" " onclick="openNav()">
+             <span></span>
+             <span></span>
+             <span></span>
+        </div>
+     </div>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" width="210px" height="40px"></a>
+      
+      <form class="forma-mobil">
+      <input name="query" type="text" class="textbox" placeholder="Znałeść usługę"></form>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left forma1-top">
+       <div id="forma1" class="input-group">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Znałeść usługi">
+        </div>
+        <button type="submit" class="btn btn-default knopka-search"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right navigacja-gura">
+        <li><a href="#">Zaloguj się</a></li>
+        <li><a href="#">Zarejestruj się</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    <div id="chSidenav" class="sidenav1">
+  <a href="javascript:void(0)" class="closebtn1" onclick="closeNav()">&times;</a>
+  <div class="mblr1"><a class="GreenBtnStl1" href="#">Rejestracja</a></div>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-log-in"></i>Logowanie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-tree-deciduous"></i>Main Page</a>
+  <a class="chmenuitem chogolne">Ogólne</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-info-sign"></i>O projekcie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-earphone"></i><i class=""></i>Kontakty</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-th-large"></i>Kategorie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-th-list"></i>Site Rules</a>
+</div>
+  </div><!-- /.container -->
+</nav>
+      <div id="navigation-tablet" class="navigacja-linki m-tablet">
+         <div class="row">
+            <ul class="navigacje-links nav navbar-nav navbar-left">
+             <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Development</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+        </li>
+              <li><a href="">Marketing i Reklama</a></li>
+              <li><a href="">Teksty i Tłumaczenia</a></li>
+              <li><a href="">SEO i Traffic</a></li>
+              <li><a href="">Biznes</a></li>
+              <li><a href="">Audio i Wideo</a></li>
+              <li><a href="">Styl życia</a></li>
+             </ul>
+          </div>
+       </div>
+    </header>
+    
+    <section id="registr">
+       <div class="container">
+          <h1 class="text-center">Rejestracja</h1>
+               <div class="col-lg-6 col-md-3 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="email" class="form-control forrejestr" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control forrejestr" id="usr" placeholder="Login">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control forrejestr" id="pwd" placeholder="Hasło">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control forrejestr" id="pwd" placeholder="Potwierdz hasło">
+                </div>
+                <div class="checkbox checkbreg">
+                  <label><input type="checkbox" value="">Oswiadczam, że zapoznałem się i akceptuje Regulamin serwisu Chwerk</label>
+                </div>
+                <a href="#" title="rejestrowac" class="btn btn-rejestrowac btn-lg t-centr">rejestrować</a>
+                </div>
+                <div class="lub text=-center col-lg-3 col-md-6 col-sm-6 col-xs-12">lub</div>
+                <div class="knop-face col-lg-3 col-md-3 col-sm-6 col-xs-12"><a href="#" title="Facebook" class="btn btn-facebook btn-lg"><i class="fa fa-facebook-square" aria-hidden="true"></i> facebook</a></div>
+           </div>
+    </section>
+     
+     
+     <div class="footer">
+        <div class="container">
+          <div class="img-soc-ic">
+              <a href=""><img src="img/Twitter.png" width="40px" height="40px"></a>
+              <a href=""><img src="img/Facebook.png" width="40px" height="40px"></a>
+              <a href=""><img src="img/Instagram.png" width="40px" height="40px"></a>
+          </div>
+          <div class="fot-text">
+              <p><a href="">about</a></p>
+              <p><a href="">membership</a></p>
+              <p><a href="">contact</a></p>
+              <p><a href="">privacy & policy</a></p>
+          </div>
+          
+          <div class="copyright">
+              <p>@ 2017 chwerk</p>
+          </div>
+          </div>
+      </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menusimple.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/98dcc2dad6.js"></script>
+  </body>
+</html>

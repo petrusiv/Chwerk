@@ -1,0 +1,146 @@
+/* Header2 */
+
+.usernamebox {
+    margin-top: 6px;
+}
+
+.usernamebox a span {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 19px;
+    padding-top: 2px;
+    margin-top: -2px;
+    font-weight: normal;
+}
+
+.rounded {
+    border-radius: 100%;
+}
+
+.userimage {
+    float: left;
+    padding-right: 8px;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.db {
+    display: block !important;
+}
+
+.sprzed {
+    font-size: 9px !important;
+    text-transform: uppercase;
+}
+
+/* Main content */
+
+#main-content1 {
+    height: auto;
+}
+
+.contentArea {
+    margin-top: 50px !important;
+}
+
+.sidebarArea {
+    margin-top: 50px !important;
+}
+
+.user-slogan {
+    font-size: 21px;
+    line-height: 22px;
+    color: #2d3142;
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-user {
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.pull-left {
+    float: left;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.userbannertext h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline;
+}
+
+.mt0 {
+    margin-top: 0px !important;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.fz22 {
+    font-size: 23px;
+}
+
+.rating-block {
+    margin-left: -40px;
+}
+
+.sidebarArea a.hugeOrangeBtn {
+    padding: 20px 0;
+    width: 100%;
+    max-width: 266px;
+    text-align: center;
+    position: relative;
+}
+
+input:hover.hugeOrangeBtn, a:hover.hugeOrangeBtn {
+    text-decoration: none;
+    background: #ef9b52;
+}
+
+.OrangeBtnStyle.h50 {
+    line-height: 50px;
+    height: 50px;
+    padding: 0px !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.h50 {
+    height: 50px !important;
+}
+
+input.hugeOrangeBtn, .hugeOrangeBtn {
+    float: left;
+    background: #ef8354;
+    border: 1px solid #ef8354;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 20px 60px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.maincontent223 {
+    padding-bottom: 30px;
+}

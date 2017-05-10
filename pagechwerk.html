@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Chwerk - skłep internet usług</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/afterl.css" rel="stylesheet">
+    <link href="css/pagechwerk.css" rel="stylesheet">
+    <link href="css/chosen.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header id="header">
+        <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <a class="menu-category menu-category_login" href="">
+         <i class="glyphicon glyphicon-th-large"></i>
+     </a>
+     <div class="chmenubutton">
+        <div class=" " onclick="openNav()">
+             <span></span>
+             <span></span>
+             <span></span>
+        </div>
+     </div>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" width="210px" height="40px"></a>
+      
+      <form class="forma-mobil">
+      <input name="query" type="text" class="textbox" placeholder="Znałeść usługę"></form>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left forma1-top">
+       <div id="forma1" class="input-group">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Znałeść usługi">
+        </div>
+        <button type="submit" class="btn btn-default knopka-search"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right navigacja-gura">
+        <li><a href=""><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+        <li><a href=""><i class="glyphicon glyphicon-envelope"></i></a></li>
+        <li><a href="">199 zł</a></li>
+          <li><div class="usernamebox droparrow" style="background: none;"><a href=""><span class="userimage"><img src="/img/male-face1-1.png" class="rounded" alt="admin" height="26" width="26"></span><span class="dib"><span class="menu usernamebox_user_name db">admin</span><span id="usertypelabel" class="sprzed db">Sprzedawca</span></span></a><div class="clear"></div></div></li>
+          <div class="dropdownbox dropdownbox-profile"><a href="https://kwork.ru/user/npetriv" class="dib v-align-m"><img src="https://kwork.ru/files/avatar/medium/noprofilepicture.gif" class="rounded" alt="npetriv" height="60" width="60"></a><p class="dib v-align-m pull-reset ml10"><a href="https://kwork.ru/user/npetriv" class="color-text font-OpenSans dropdownbox_username">npetriv</a><br><span id="usertypelabel2" class="f14 font-OpenSans color-lightGray dib">Продавец</span></p><div class="select-user-type select-user-type_small mt15 mb10"><input name="userType" onclick="changeUserType(1, true);" type="radio" id="1" value="1"><label for="1" class="select-user-type_customer select-user-type-js">Покупатель</label><input name="userType" onclick="changeUserType(2, true);" type="radio" id="2" value="2" checked=""><label for="2" class="select-user-type_performer select-user-type-js">Продавец</label></div><div class="block-type-customer" style=""><ul><li><a href="https://kwork.ru/orders">Мои заказы</a></li><li><a href="https://kwork.ru/manage_projects">Запросы на услуги</a></li><li><a href="https://kwork.ru/bookmarks">Избранное</a></li></ul></div><div class="block-type-performer" style="display: block;"><ul><li><a href="https://kwork.ru/manage_kworks">Мои кворки</a></li><li><a href="https://kwork.ru/projects">Запросы от покупателей</a></li><li><a href="https://kwork.ru/bookmarks">Избранное</a></li></ul></div><ul><li><a href="https://kwork.ru/settings">Настройки</a></li><li class="divider"></li><li><a href="">Выход</a></li></ul></div>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    <div id="chSidenav" class="sidenav1">
+  <a href="javascript:void(0)" class="closebtn1" onclick="closeNav()">&times;</a>
+  <div class="mblr1"><a class="GreenBtnStl1" href="#">Rejestracja</a></div>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-log-in"></i>Logowanie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-tree-deciduous"></i>Main Page</a>
+  <a class="chmenuitem chogolne">Ogólne</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-info-sign"></i>O projekcie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-earphone"></i><i class=""></i>Kontakty</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-th-large"></i>Kategorie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-th-list"></i>Site Rules</a>
+</div>
+  </div><!-- /.container -->
+</nav>
+      <div id="navigation-tablet" class="navigacja-linki m-tablet">
+         <div class="row">
+            <ul class="navigacje-links nav navbar-nav navbar-left">
+             <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Development</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+        </li>
+              <li><a href="">Marketing i Reklama</a></li>
+              <li><a href="">Teksty i Tłumaczenia</a></li>
+              <li><a href="">SEO i Traffic</a></li>
+              <li><a href="">Biznes</a></li>
+              <li><a href="">Audio i Wideo</a></li>
+              <li><a href="">Styl życia</a></li>
+             </ul>
+          </div>
+       </div>
+    </header>
+    <div class="container">
+        <div class="row">
+           <div class="mt20">
+                <div class="col-lg-8 col-md-8 contentArea">
+                   <div class="bgWhite">
+                      <div class="page-chwerk_header">
+
+                    <div class="p15-20 border-b-none" style="padding-top: 6px;"><h1 class="mb8 mt7 chwerk-title" itemprop="name">Описание товара для интернет-магазина</h1>
+
+                    <div class="bread-crump block-response">
+
+                    <ol itemscope="" itemtype="http://schema.org/BreadcrumbList" class="mb0">
+
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+
+                    <a itemprop="item" href="https://kwork.ru/categories/writing-translations">
+                        <span itemprop="name">Тексты и переводы</span>
+                    </a>
+
+                    <meta itemprop="position" content="1"><span class="glyphicon glyphicon-chevron-right"></span>
+
+                    </li>
+
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+
+                    <a itemprop="item" href="https://kwork.ru/categories/business-copywriting">
+
+                    <span itemprop="name">Продающие и бизнес-тексты</span>
+                    </a>
+
+                    <meta itemprop="position" content="2">
+
+                    </li>
+
+                    </ol>
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="m-visible mt5 fs15">
+
+                    <div><i class="fa fa-clock-o mr5" aria-hidden="true"></i>Выполнение: 4 дня</div>
+
+                    <hr class="gray mti5 mbi5">
+
+                    <div class="clearfix">
+
+                    <div class="pull-right font-OpenSans f14">
+
+                    <i class="ico-green-circle dib v-align-m mr5"></i><span class="dib v-align-m mr5">26</span><i class="ico-red-circle dib v-align-m ml5 mr5"></i><span class="dib v-align-m">0</span>
+
+                    </div>26 оценок</div><hr class="gray mti5 mbi5">
+
+                    <div class="clearfix"><div class="pull-right font-OpenSans f14">1</div>Заказов в очереди</div>
+
+                    </div></div>
+
+                    <div class="clear"></div>
+
+                    <div class="image-chwerk">
+
+                    <div class="sliderImage"><img itemprop="image" src="https://kwork.ru/pics/t3/28/64429-1.jpg" width="650" height="433" alt="Описание товара для интернет-магазина 2 - kwork.ru" title="Описание товара для интернет-магазина - фото"></div>
+                                </div>
+                            </div>
+                      <div class="p15-20 clearfix pt20 pb20">
+                         <h2 class="chwerk-description">O tym chwerku</h2>
+                         <div>
+                             <div class="b-about-text clearfix">
+                                 <div class="b-about-text_container">
+                                     <div class="b-about-text_container_text">
+                                         <div class="description-text">
+                                         <p>Решу ваши проблемы связанные с WordPress и Оpencart. Поиск, установка, настройка, доработка модулей и плагинов. Правка стилей и html.<br></p>
+                                         </div>
+                                         <div class="chwerk-volume"><b>Zakres usługi przy zamówieniu 1 chwerka:</b> <span class="chwerk-volume-text">Внесение правок на уже готовом сайте. Затраты времени не более 3 часов</span></div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+
+                      </div>     
+                   </div>       
+                   <div class="bgWhite clearfix mb0 mt20 mb20">
+                       <div class="white-bg-border clearfix" style="padding: 0 20px 10px 20px">
+                           <h2>Opinie klientów</h2>
+                       </div>
+                   </div>
+               </div>
+                <div class="col-lg-3 col-md-3 ">
+                    <div class="gray-bg-border p15-20-0-20 order-more-block-btn m-hidden" style="background: white none repeat scroll 0 0;">
+		<form action="chwerk.pl" method="post" name="newextformside" id="newextformside" data-pause-on="" data-pause-off="">
+		<div>
+		<div class="order-block-cart">
+		<a href="#" class="order-block-cart_btn hugeOrangeBtn OrangeBtnStyle  h50 js-make-order ">Kupić za  <span class="newordext">50 zł</span> 
+		
+		</a>
+		<div class="hugeOrangeBtn OrangeBtnStyle h50 order-block-cart_cart " title="Добавить в корзину" onclick="CartModule.addItem();" data-title="доработаю сайт на WP и OpenCart" data-image="https://kwork.ru/pics/t3/56/29552-1.jpg" data-url="/website-repair/29552/dorabotayu-sayt-na-wp-i-opencart" data-price="500">
+		<i class="glyphicon glyphicon-shopping-cart"></i>
+		</div>
+		</div>
+		</div>
+		<div class="font-OpenSans f15">
+		<div class="mt7 pd10">
+		<span class="dib">Ilość:</span>
+		<select onchange="recalculatePrice('side');" id="chwerkcntside" name="chwerkcnt" class="floatright h25 styled" style="display: none;">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		</select>
+		<div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 108px;" title="" id="chwerkcntside_chosen">
+		<a class="chosen-single">
+		<span>3</span>
+		<div>
+		<b></b>
+		</div>
+		</a>
+		<div class="chosen-drop">
+		<div class="chosen-search">
+		 <input type="text" autocomplete="off" readonly="">
+        </div>
+        <ul class="chosen-results"></ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="order-extras mt15 db close" style="display: none;">
+        <div class="extras-form-div"></div>
+        </div>
+        <input name="EPID" type="hidden" value="29552">
+        </form>
+
+
+	</div>
+               
+                    <div class="gray-bg-border p15-20 mt20 clearfix bgWhite f15 m-hidden">
+                            <div class="clearfix"><div class="pull-right font-OpenSans f14" id="time">2 dnia</div> Obecuje wykonac za</div>
+                                    <hr class="gray">
+                            <div class="clearfix">
+                        <div class="clearfix">
+                            <div class="pull-right font-OpenSans f14">1</div>
+                            Zamówień w kolejce
+                        </div>
+                    </div>
+                </div>
+                    <div class="gray-bg-border p15-20 mt20 clearfix bgWhite f15 m-hidden">
+                        <div class="profile-info clearfix ">
+						<div class="profile-avatar"><a href="prfile.html"><img class="rounded" src="img/noprofilepicture.gif" width="60" height="60" alt="admin"></a></div>
+			<div class="pull-left">
+				<div class="user-info"> 
+					<a href="profile.html">Admin</a>
+									</div>
+								<div class="user-level f17 fw300">
+					Specialista																<span class="font-OpenSans f16 ml10 fw300" style="color: grey;"><img src="img/online.png" title="Online"> Online</span>
+                </div>
+			</div>
+		</div>
+                        <hr class="gray">
+                        <div class="clearfix mt15">
+                            <div class="pull-right font-OpenSans f14">8</div>
+                            <span class="font-OpenSans f14">Zleceń wykonano</span>
+                        </div>
+                        <hr class="gray">
+                        <div class="na-str mt10 f17">
+                            Na stronie z 4 grudnia 2015
+                        </div>
+                        <br/>
+                        <a href="#" class="contact-pg_btn hugeOrangeBtn OrangeBtnStyle h50" style="width: 100%;">Kontakt</a>
+                    </div>
+            </div>
+         </div>
+        </div>   
+    </div>
+      <div class="footer">
+        <div class="container">
+          <div class="img-soc-ic">
+              <a href=""><img src="img/Twitter.png" width="40px" height="40px"></a>
+              <a href=""><img src="img/Facebook.png" width="40px" height="40px"></a>
+              <a href=""><img src="img/Instagram.png" width="40px" height="40px"></a>
+          </div>
+          <div class="fot-text">
+              <p><a href="">about</a></p>
+              <p><a href="">membership</a></p>
+              <p><a href="">contact</a></p>
+              <p><a href="">privacy & policy</a></p>
+          </div>
+          
+          <div class="copyright">
+              <p>@ 2017 chwerk</p>
+          </div>
+          </div>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menusimple.js" type="text/javascript"></script>
+    <script src="js/chosen.jquery.min.js" type="text/javascript"></script>
+  </body>
+</html>

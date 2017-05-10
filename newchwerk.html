@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Chwerk - skłep internet usług</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/afterl.css" rel="stylesheet">
+    <link href="css/newchwerk.css" rel="stylesheet">
+    <link href="css/file-uploader.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header id="header">
+        <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <a class="menu-category menu-category_login" href="">
+         <i class="glyphicon glyphicon-th-large"></i>
+     </a>
+     <div class="chmenubutton">
+        <div class=" " onclick="openNav()">
+             <span></span>
+             <span></span>
+             <span></span>
+        </div>
+     </div>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" width="210px" height="40px"></a>
+      
+      <form class="forma-mobil">
+      <input name="query" type="text" class="textbox" placeholder="Znałeść usługę"></form>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left forma1-top">
+       <div id="forma1" class="input-group">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Znałeść usługi">
+        </div>
+        <button type="submit" class="btn btn-default knopka-search"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right navigacja-gura">
+        <li><a href=""><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+        <li><a href=""><i class="glyphicon glyphicon-envelope"></i></a></li>
+        <li><a href="">199 zł</a></li>
+          <li><div class="usernamebox droparrow" style="background: none;"><a href=""><span class="userimage"><img src="/img/male-face1-1.png" class="rounded" alt="admin" height="26" width="26"></span><span class="dib"><span class="menu usernamebox_user_name db">admin</span><span id="usertypelabel" class="sprzed db">Sprzedawca</span></span></a><div class="clear"></div></div></li>
+          <div class="dropdownbox dropdownbox-profile"><a href="https://chwerk.ru/user/npetriv" class="dib v-align-m"><img src="https://chwerk.ru/files/avatar/medium/noprofilepicture.gif" class="rounded" alt="npetriv" height="60" width="60"></a><p class="dib v-align-m pull-reset ml10"><a href="https://chwerk.ru/user/npetriv" class="color-text font-OpenSans dropdownbox_username">npetriv</a><br><span id="usertypelabel2" class="f14 font-OpenSans color-lightGray dib">Продавец</span></p><div class="select-user-type select-user-type_small mt15 mb10"><input name="userType" onclick="changeUserType(1, true);" type="radio" id="1" value="1"><label for="1" class="select-user-type_customer select-user-type-js">Покупатель</label><input name="userType" onclick="changeUserType(2, true);" type="radio" id="2" value="2" checked=""><label for="2" class="select-user-type_performer select-user-type-js">Продавец</label></div><div class="block-type-customer" style=""><ul><li><a href="https://chwerk.ru/orders">Мои заказы</a></li><li><a href="https://chwerk.ru/manage_projects">Запросы на услуги</a></li><li><a href="https://chwerk.ru/bookmarks">Избранное</a></li></ul></div><div class="block-type-performer" style="display: block;"><ul><li><a href="https://chwerk.ru/manage_chwerks">Мои кворки</a></li><li><a href="https://chwerk.ru/projects">Запросы от покупателей</a></li><li><a href="https://chwerk.ru/bookmarks">Избранное</a></li></ul></div><ul><li><a href="https://chwerk.ru/settings">Настройки</a></li><li class="divider"></li><li><a href="">Выход</a></li></ul></div>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    <div id="chSidenav" class="sidenav1">
+  <a href="javascript:void(0)" class="closebtn1" onclick="closeNav()">&times;</a>
+  <div class="mblr1"><a class="GreenBtnStl1" href="#">Rejestracja</a></div>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-log-in"></i>Logowanie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-tree-deciduous"></i>Main Page</a>
+  <a class="chmenuitem chogolne">Ogólne</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-info-sign"></i>O projekcie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-earphone"></i><i class=""></i>Kontakty</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-th-large"></i>Kategorie</a>
+  <a class="chmenuitem" href="#"><i class="glyphicon glyphicon-th-list"></i>Site Rules</a>
+</div>
+  </div><!-- /.container -->
+</nav>
+      <div id="navigation-tablet" class="navigacja-linki m-tablet">
+         <div class="row">
+            <ul class="navigacje-links nav navbar-nav navbar-left">
+             <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Development</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+        </li>
+              <li><a href="">Marketing i Reklama</a></li>
+              <li><a href="">Teksty i Tłumaczenia</a></li>
+              <li><a href="">SEO i Traffic</a></li>
+              <li><a href="">Biznes</a></li>
+              <li><a href="">Audio i Wideo</a></li>
+              <li><a href="">Styl życia</a></li>
+             </ul>
+          </div>
+       </div>
+    </header>
+    
+    <!-- Trumbowyg WYSIWYG --><script src="pluggins/trumbowyg/trumbowyg.min.js"></script><script src="pluggins/trumbowyg/langs/pl.min.js"></script><link rel="stylesheet" href="pluggins/trumbowyg/ui/trumbowyg.min.css"><script src="pluggins/trumbowyg/plugins/colors/trumbowyg.colors.min.js"></script><link rel="stylesheet" href="pluggins/trumbowyg/plugins/colors/ui/trumbowyg.colors.min.css"><!-- !Trumbowyg WYSIWYG -->
+    
+    <script src="js/file-uploader.min.js" type="text/javascript"></script>
+    
+    <section id="newchwerkcontent">
+    <div class="container">
+      <div class="centerwrap chwerk-save-page">
+           <form class="js-chwerk-save-form" enctype="multipart/form-data" method="post">
+            <h1 class="text-left">Stworzenie Chwerka</h1>
+            <div class="js-step card card_borderless" data-step=1>
+                <div class="card__content chwerk-save-step__container">
+                   <div class="card__content-inner chwerk-save-step__header">
+                       <div class="chwerk-save-step__header-inner">
+                           <div class="chwerk-save-step__number">1</div>
+                           <div class="card__content-inner chwerk-save-step__header"><div class="chwerk-save-step__header-inner"><div class="chwerk-save-step__title">Podstawowe</div></div></div>
+                       </div>
+                    </div>
+    <div class="chwerk-save-step__content chwerk-save-step__animation card__content-inner card__content-inner_separator">
+                  <div class="js-field-block chwerk-save-step__field-block"><div class="chwerk-save-step__field-label">
+                  <label class="chwerk-save-step__field-label-name" for="step1-name">Nazwe</label>
+                  <div class="js-field-input-hint chwerk-save-step__field-hint">70 maks</div>
+                  <div class="js-chwerk-save-field-error chwerk-save-step__field-error hidden"></div>
+                  </div>
+                  <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip">
+                  <textarea id="step1-name" data-max="70" maxlength="70" data-field-name="названия" data-required="true" data-no-symbols="true" name="title" class="js-field-input chwerk-save-step__field-input chwerk-save-step__field-input_textarea chwerk-save-step__field-input_name input" placeholder="Napiszę portret"></textarea>
+                  <div class="field-tooltip field-tooltip_name"><div class="field-tooltip__corner"></div><div class="field-tooltip__image"></div><div class="field-tooltip__text-block"><div class="field-tooltip__title">Введите название кворка.</div><div class="field-tooltip__message">Оно должно отражать суть вашего предложения и описывать услугу, которую вы готовы выполнить за 400&nbsp;руб. Обратите внимание, что для покупателя стоимость услуги будет выше, с учетом комиссии составит 500&nbsp;руб.</div></div></div>
+                  
+                  </div></div>
+                  
+                  
+                  <div class="js-field-block chwerk-save-step__field-block"><div class="chwerk-save-step__field-label">
+                  
+                  <label class="chwerk-save-step__field-label-name" for="step1-category">Kategorie</label>
+                  
+                  <div class="js-chwerk-save-field-error chwerk-save-step__field-error hidden"></div>
+                  </div>
+                  
+                  <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip">
+                  
+                  <div class="js-category-select"><select class="js-field-input-cat input input_size_s chwerk-save-step__field-input chwerk-save-step__field-input_category js-category_parent"><option></option><option value="5">Тексты и переводы</option><option value="7">Аудио и видео</option><option value="11">Разработка и IT</option><option value="15">Дизайн</option><option value="17">SEO и трафик</option><option value="45">Маркетинг и реклама</option><option value="83">Бизнес</option><option value="85">Стиль жизни</option><option value="86">Оригинальное</option></select><select class="js-field-input-cat input input_size_s chwerk-save-step__field-input chwerk-save-step__field-input_category js-category_sub hidden" name="category_id"></select></div>
+                  
+                  <div class="clear"></div>
+                  
+                  <div class="field-tooltip field-tooltip_category">
+                  
+                  <div class="field-tooltip__corner"></div>
+                  
+                  <div class="field-tooltip__image"></div>
+                  
+                  <div class="field-tooltip__text-block">
+                  <div class="field-tooltip__title">Выберите категорию, наиболее подходящую для этого кворка.</div>
+                  
+                  <div class="field-tooltip__message">Это позволит покупателям быстро найти ваш кворк.</div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  
+                  <div class="js-field-block chwerk-save-step__field-block link-type-block hidden">
+                  
+                  <div class="chwerk-save-step__field-label"><label class="chwerk-save-step__field-label-name" for="step1-link-type">Источник ссылок</label><div class="js-chwerk-save-field-error chwerk-save-step__field-error hidden"></div></div>
+                  
+                  <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip">
+                  
+                  <div>
+                  
+                  <input type="radio" class="link-type-checkbox styled-checkbox" id="linkType_0" name="linkType[radio]" value="Статьи">
+                  
+                  <label for="linkType_0">Статьи</label>
+                  
+                  </div>
+                  
+                  <div>
+                  
+                  <input type="radio" class="link-type-checkbox styled-checkbox" id="linkType_1" name="linkType[radio]" value="Посты в блогах">
+                  <label for="linkType_1">Посты в блогах</label>
+                  
+                  </div>
+                  
+                  <div><input type="radio" class="link-type-checkbox styled-checkbox" id="linkType_2" name="linkType[radio]" value="Сообщения на форумах"><label for="linkType_2">Сообщения на форумах</label></div>
+                  
+                  <div>
+                  
+                  <input type="radio" class="link-type-checkbox styled-checkbox" id="linkType_3" name="linkType[radio]" value="Комментарии в блогах / на сайтах">
+                  
+                  <label for="linkType_3">Комментарии в блогах / на сайтах</label></div>
+                  
+                  <div><input type="radio" class="link-type-checkbox styled-checkbox" id="linkType_4" name="linkType[radio]" value="Профили пользователей"><label for="linkType_4">Профили пользователей</label></div>
+                  
+                  <input type="text" name="linkType[other]" class="link-type-other js-field-input chwerk-save-step__field-input input input_size_s mt10" placeholder="Другое" value="">
+                  
+                  <div class="field-tooltip field-tooltip_category"><div class="field-tooltip__corner"></div><div class="field-tooltip__image"></div><div class="field-tooltip__text-block"><div class="field-tooltip__title">Выберите источник ссылок.</div><div class="field-tooltip__message"></div></div></div>
+                  
+                  </div></div>
+                  
+                  <div class="js-field-block chwerk-save-step__field-block category-section-block hidden"><div class="chwerk-save-step__field-label"><label class="chwerk-save-step__field-label-name">Nazwa bloku</label><div class="js-chwerk-save-field-error chwerk-save-step__field-error hidden"></div></div></div>
+                  
+                  <div class="js-field-block chwerk-save-step__field-block">
+                  <div class="chwerk-save-step__field-label">
+                  <label class="chwerk-save-step__field-label-name" for="step1-description">Opis i pliki</label>
+                  <div class="js-field-input-hint chwerk-save-step__field-hint">100 min</div>
+                  
+                  <div class="js-chwerk-save-field-error chwerk-save-step__field-error hidden"></div>
+                  </div>
+                  
+                  <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip">
+                  
+                  <div class="trumbowyg-box trumbowyg-editor-visible trumbowyg-ru trumbowyg">
+                  
+                  <div class="trumbowyg-button-pane"><div class="trumbowyg-button-group "><button type="button" class="trumbowyg-bold-button " title="Полужирный (Ctrl + B)" tabindex="-1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trumbowyg-bold"></use></svg></button></div><div class="trumbowyg-button-group "></div><div class="trumbowyg-button-group "><button type="button" class="trumbowyg-italic-button " title="Курсив (Ctrl + I)" tabindex="-1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trumbowyg-italic"></use></svg></button></div><div class="trumbowyg-button-group "></div><div class="trumbowyg-button-group "><button type="button" class="trumbowyg-orderedList-button " title="Нумерованный список" tabindex="-1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trumbowyg-ordered-list"></use></svg></button></div></div>
+                  
+                  <div class="trumbowyg-editor" contenteditable="true" dir="ltr" placeholder="Wprowadź opis" style="height: 78px;"></div>
+                  
+                  <textarea id="step1-description" data-min="100" data-max="1200" data-required="true" data-field-name="описания" name="description" class="js-field-input js-field-input-description chwerk-save-step__field-input chwerk-save-step__field-input_textarea chwerk-save-step__field-input_description input trumbowyg-textarea" placeholder="Wprowadź opis" tabindex="-1" style="height: 78px;"></textarea>
+                  <div class="trumbowyg-overlay" style="top: 37px; height: 301px;"></div>
+                  </div>
+                  <div class="field-tooltip field-tooltip_description">
+                  
+                  <div class="field-tooltip__corner"></div>
+                  
+                  <div class="field-tooltip__image"></div>
+                  
+                  <div class="field-tooltip__text-block"><div class="field-tooltip__title">Opisz usługi, które oferujesz w tym chwerku, jak można więcej.
+</div>
+                  <div class="field-tooltip__message">Bądź oryginalność: dodaj argumenty na swoją korzyść, dać gwarancji, należy bonusy itp., aby klient wybrał właśnie twój кворк.</div></div>
+                  
+                  </div></div><div class="chwerk-save-step__field-value"><div class="chwerk-save-step__files">
+                  <div id="load-files-description" class="add-files" data-input-name="description">
+                  <label class="file-uploader__add"><input type="file" class="file-uploader__file-input" multiple="">
+                  <i class="icon ico-clip file-uploader__add-ico"></i>
+                  <span class="file-uploader__add-text">Dodaj plik</span>
+                  <span class="file-uploader__add-hint">do 10 plików nie więcej 4 Mb</span>
+                  </label>
+                  <div class="load-file__list"></div>
+                  </div></div></div></div>
+                  
+                  <div class="js-field-block chwerk-save-step__field-block">
+                  
+                  <div class="chwerk-save-step__field-label"><label class="chwerk-save-step__field-label-name" for="step1-tags">Tagi</label><div class="js-field-input-hint chwerk-save-step__field-hint">100 maks</div><div class="js-chwerk-save-field-error chwerk-save-step__field-error hidden pb10"></div>
+                  
+                  </div>
+                  
+                  <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip">
+                  
+                  <input class="js-field-input chwerk-save-step__field-input input input_size_s" maxlength="100" data-max="100" id="step1-tags" data-required="true" data-field-name="тегов" name="tags" placeholder="Photoshop, pisanie, projektowanie landingu" value="">
+                  
+                  <div class="field-tooltip field-tooltip_extras"><div class="field-tooltip__corner"></div><div class="field-tooltip__image"></div><div class="field-tooltip__text-block">
+                  
+                  <div class="field-tooltip__title">Введите через запятую слова, которые наилучшим образом опишут вашу услугу.</div>
+                  
+                  <div class="field-tooltip__message"> Подумайте, по каким ключевым словам покупатель мог бы искать ваш кворк, и укажите их.</div>
+                  
+                    </div>
+                  </div>
+                  </div>
+                  </div></div>
+                   </div>
+                   <div class="js-next-step-btn btn34 btn_color_y btn_size_m">Dalej</div>
+                </div>
+                
+               <div class="js-step js-step-2 card card_borderless chwerk-save-step chwerk-save-step_type_single chwerk-save-page__step card21">
+                   
+                   <div class="card__content chwerk-save-step__container">
+                       <div class="card__content-inner chwerk-save-step__header">
+                       <div class="chwerk-save-step__header-inner">
+                       <div class="chwerk-save-step__number">2</div>
+                       <div class="chwerk-save-step__title">Koszty i opcje</div>
+                       </div></div>
+                    <div class="chwerk-save-step__content chwerk-save-step__animation   card__content-inner card__content-inner_separator">
+                           <div class="chwerk-save-step__field-block js-field-block"><div class="chwerk-save-step__field-label chwerk-save-step__field-label_multiline">
+                           <label class="chwerk-save-step__field-label-name" for="step2-work-time">Czas wykonania</label>
+                           <div class="js-chwerk-save-field-error chwerk-save-step__field-error hidden"></div>
+                           </div>
+                           <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip">
+                           <select id="step2-work-time" class="input input_size_s js-field-select" name="work_time">
+                           <option value="1" class="">1&nbsp;dzień</option>
+                           <option value="2" class="">2&nbsp;dnia</option>
+                           <option value="3" class="">3&nbsp;dnia</option>
+                           <option value="4" class="">4&nbsp;dnia</option>
+                           <option value="5" class="">5&nbsp;dni</option>
+                           <option value="6" class="">6&nbsp;dni</option>
+                           <option value="7" class="">7&nbsp;dni</option>
+                           <option value="8" class="">8&nbsp;dni</option>
+                           <option value="9" class="">9&nbsp;dni</option>
+                           <option value="10" class="">10&nbsp;dni</option>
+                           <option value="11" class="hidden">11&nbsp;дней</option>
+                           <option value="12" class="hidden">12&nbsp;дней</option>
+                           <option value="13" class="hidden">13&nbsp;дней</option><option value="14" class="hidden">14&nbsp;дней</option><option value="15" class="hidden">15&nbsp;дней</option><option value="16" class="hidden">16&nbsp;дней</option><option value="17" class="hidden">17&nbsp;дней</option><option value="18" class="hidden">18&nbsp;дней</option><option value="19" class="hidden">19&nbsp;дней</option><option value="20" class="hidden">20&nbsp;дней</option><option value="21" class="hidden">21&nbsp;день</option><option value="22" class="hidden">22&nbsp;дня</option><option value="23" class="hidden">23&nbsp;дня</option><option value="24" class="hidden">24&nbsp;дня</option><option value="25" class="hidden">25&nbsp;дней</option><option value="26" class="hidden">26&nbsp;дней</option><option value="27" class="hidden">27&nbsp;дней</option><option value="28" class="hidden">28&nbsp;дней</option><option value="29" class="hidden">29&nbsp;дней</option><option value="30" class="hidden">30&nbsp;дней</option>
+                           </select>
+                           </div>
+                           </div>
+                           <div class="chwerk-save-step__field-block js-field-block">
+                           <div class="chwerk-save-step__field-label chwerk-save-step__field-label_multiline">
+                           <label class="chwerk-save-step__field-label-name" for="step2-service-size">Zakres usług w 1 chwerku</label>
+                           <div class="js-chwerk-save-field-error chwerk-save-step__field-error hidden"></div>
+                           </div>
+                           <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip">
+                           <input class="chwerk-save-step__field-input input input_size_s js-field-input input-service-size" id="step2-service-size" name="service_size" placeholder="Naprzykład: 1000 symbolów tekstu" value=""></div>
+                           </div>
+                           </div>
+                           <div class="chwerk-save-step__field-block chwerk-save-step__field-label_multiline">
+                      <div class="chwerk-save-step__field-label">
+                      <label class="chwerk-save-step__field-label-name">Cena 1 chwerka</label>
+                      </div>
+                      <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip chwerk-save-step__chwerk-price">80&nbsp;Zł</div></div>
+                    </div>
+                      <div class="js-next-step-btn btn34 btn_color_y btn_size_m">Dalej</div>
+               </div>
+               
+               <div class="js-step card card_borderless chwerk-save-step chwerk-save-page__step card21">
+                   <div class="card__content chwerk-save-step__container">
+                       <div class="card__content-inner chwerk-save-step__header">
+                           <div class="chwerk-save-step__header-inner">
+                               <div class="chwerk-save-step__number">3</div>
+                               <div class="chwerk-save-step__title">Obraz i instrukcje
+                               </div>
+                           </div>
+                       </div>
+                       <div class="chwerk-save-step__content chwerk-save-step__animation card__content-inner card__content-inner_separator">
+                           <div class="card card_secondary chwerk-save-step__image-card chwerk-photos-block">
+                               <div class="card__content">
+                                   <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip chwerk-save-step__field-value_fill-line chwerk-save-step__field-value_images js-field-block">
+                                      <div class="js-add-photo">
+                                          
+                                          <div class="js-photo__block add-photo__block">
+                                              <div class="add-photo__file-wrapper file-wrapper long-touch-js">
+                                                  <div class="file-wrapper-block-rectangle"></div>
+                                                  <input type="file" class="js-file-input js-chwerk-photo-input js-chwerk-photo-input-first" accept=".jpeg, .jpg, .gif, .png" name="first-chwerk-photo">
+                                                  
+                                                  <div style="text-align: center; height: 25px; padding-top: 5px;"><span class="js-file-add-button button f14 font-OpenSans link-color dibi mt6i" data-init-text="Wybierz">Wybierz</span></div>
+                                              </div>
+                                              <div class="add-photo__file-wrapper file-wrapper long-touch-js">
+                                                  <div class="file-wrapper-block-rectangle"></div>
+                                                  <input type="file" class="js-file-input js-chwerk-photo-input js-chwerk-photo-input-first" accept=".jpeg, .jpg, .gif, .png" name="first-chwerk-photo">
+                                                  
+                                                  <div style="text-align: center; height: 25px; padding-top: 5px;"><span class="js-file-add-button button f14 font-OpenSans link-color dibi mt6i" data-init-text="Wybierz">Wybierz</span></div>
+                                              </div>
+                                              <div class="add-photo__file-wrapper file-wrapper long-touch-js">
+                                                  <div class="file-wrapper-block-rectangle"></div>
+                                                  <input type="file" class="js-file-input js-chwerk-photo-input js-chwerk-photo-input-first" accept=".jpeg, .jpg, .gif, .png" name="first-chwerk-photo">
+                                                  
+                                                  <div style="text-align: center; height: 25px; padding-top: 5px;"><span class="js-file-add-button button f14 font-OpenSans link-color dibi mt6i" data-init-text="Wybierz">Wybierz</span>
+                            
+                                                  </div>
+                                              </div>
+                                              
+                                          </div>
+                                      </div> 
+                                       
+                                   </div>
+                                   <div class="js-field-block chwerk-save-step__field-value chwerk-save-step__field-value_tooltip chwerk-save-step__field-value_youtube chwerk-save-step__field-value_fill-line">
+                           
+                           <input class="js-field-input chwerk-save-step__field-value_youtube-input input input_size_s chwerk-save-step__field-input" data-validator="youtube" name="youtube_link" size="30" type="text" value="" placeholder="Link na wideo YouTube (nie obowiązkowe)" data-post-name="youtube_link">
+                           
+                           
+                       </div>
+                               </div>
+                               
+                           </div>
+                       </div>
+                       
+                       
+                       <div class="js-field-block chwerk-save-step__field-block">
+                           <div class="chwerk-save-step__field-label"><label class="chwerk-save-step__field-label-name" for="step1-instruction">Instrukcja<br>kupującym</label>
+                           <div class="js-field-input-hint chwerk-save-step__field-hint">min 100</div>
+                           </div>
+                           <div class="chwerk-save-step__field-value chwerk-save-step__field-value_tooltip"><textarea id="step1-description" data-min="100" data-field-name="instrukcja" data-required="true" name="instruction" class="js-field-input chwerk-save-step__field-input chwerk-save-step__field-input_textarea chwerk-save-step__field-input_instruction input" placeholder="Instrukcja"></textarea></div>
+                       </div>
+                   </div>
+                   
+               </div>
+               <div class="js-gotowe-btn btn35 btn_color_y">Gotowe</div>
+          </form>
+        </div>
+    </div>
+      </section>
+      <div class="footer">
+        <div class="container">
+          <div class="img-soc-ic">
+              <a href=""><img src="img/Twitter.png" width="40px" height="40px"></a>
+              <a href=""><img src="img/Facebook.png" width="40px" height="40px"></a>
+              <a href=""><img src="img/Instagram.png" width="40px" height="40px"></a>
+          </div>
+          <div class="fot-text">
+              <p><a href="">about</a></p>
+              <p><a href="">membership</a></p>
+              <p><a href="">contact</a></p>
+              <p><a href="">privacy & policy</a></p>
+          </div>
+          
+          <div class="copyright">
+              <p>@ 2017 chwerk</p>
+          </div>
+          </div>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menusimple.js" type="text/javascript"></script>
+  </body>
+</html>

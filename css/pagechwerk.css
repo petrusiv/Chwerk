@@ -1,0 +1,230 @@
+.sidebarArea {
+    width:310px;
+}
+
+.bgWhite {
+    background: white !important;
+}
+
+.white-bg-border {
+    border: 1px solid #e8e8e8;
+    background: white;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt15 {
+    margin-top: 20px;
+}
+
+.pd10 {
+    padding: 10px 20px 0px 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.clearfix:after, .clearfix:before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.border-b-none {
+    border-bottom: none !important;
+}
+
+.p15-20 {
+    padding: 15px 20px;
+}
+
+.mb8 {
+    margin-bottom: 8px !important;
+}
+
+.mt7 {
+    margin-top: 7px;
+}
+
+.bread-crump {
+    height: auto;
+    min-height: 19px;
+}
+
+.bread-crump ol {
+    margin-top: 0px;
+}
+
+.bread-crump li {
+    display: inline-block;
+    list-style: none;
+}
+
+.bread-crump li:nth-child(1) {
+    margin-left: -40px;
+}
+
+.bread-crump li a span {
+    font-family: 'Open Sans';
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+.image-chwerk {
+    text-align: center;   
+}
+
+.description-text {
+    font-size: 20px;
+}
+
+.chwerk-volume {
+    font-size: 20px;
+}
+
+.order-more-block-btn {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.order-block-cart {
+    height: 50px;
+    padding: 10px 5px 50px 5px;
+}
+
+
+.order-block-cart .hugeOrangeBtn.order-block-cart_btn {
+    width: 77% !important;
+}
+
+.gray-bg-border {
+    border: 1px solid #e8e8e8;
+    background: #fafafa;
+}
+
+.hugeOrangeBtn {
+    padding: 20px 0;
+    width: 100%;
+    max-width: 266px;
+    text-align: center;
+    position: relative;
+}
+
+input:hover.hugeOrangeBtn, a:hover.hugeOrangeBtn {
+    text-decoration: none;
+    background: #ef9b52;
+}
+
+.OrangeBtnStyle.h50 {
+    line-height: 50px;
+    height: 50px;
+    padding: 0px !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.f15 {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.floatright {
+    float: right;
+}
+
+.pt5 {
+    padding-top: 5px;
+}
+
+.order-block-cart .hugeOrangeBtn.order-block-cart_cart {
+    width: 20% !important;
+    margin-left: 3% !important;
+}
+
+.h50 {
+    height: 50px !important;
+}
+
+input.hugeOrangeBtn, .hugeOrangeBtn {
+    float: left;
+    background: #ef8354;
+    border: 1px solid #ef8354;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 20px 60px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-info .profile-avatar {
+    float: left;
+    width: 60px;
+    margin-right: 15px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.profile-info .user-info {
+    margin-bottom: 3px;
+    max-width: 188px;
+    margin-top: 10px;
+}
+
+.profile-info .user-info a {
+    overflow: hidden;
+    display: block;
+    color: #000;
+}
+
+.profile-info .user-level {
+    color: #8a8a8a;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Open Sans';
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f17 {
+    font-size: 18px;
+}
+
+.na-str {
+    text-align: center;
+}
+
+.contact-pg_btn {
+    text-align: center;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 767px) {
+
+.m-visible {
+    display: none;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .na-str {
+        text-align: left;
+    }
+
+}

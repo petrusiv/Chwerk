@@ -1,0 +1,205 @@
+/* Main content */
+
+#main-content1 {
+        height: 250px;
+    }
+
+/* Header2 */
+
+.usernamebox {
+    margin-top: 6px;
+}
+
+.usernamebox a span {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 19px;
+    padding-top: 2px;
+    margin-top: -2px;
+    font-weight: normal;
+}
+
+.rounded {
+    border-radius: 100%;
+}
+
+.userimage {
+    float: left;
+    padding-right: 8px;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.db {
+    display: block !important;
+}
+
+.sprzed {
+    font-size: 9px !important;
+    text-transform: uppercase;
+}
+
+.rubric-list {
+    margin-left: -8px;
+}
+
+.rubric-list__item {
+    width: 280px;
+}
+
+.rubric-item {
+    display: block;
+    float: left;
+}
+
+.rubric-item__image {
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+    box-sizing: border-box;
+}
+
+.rubric-item__name {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.rubric-list a:hover {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.rubric-item:hover .rubric-item__name {
+    color: #337ab7;
+    text-decoration: none;
+} 
+
+#main-content-n {
+    margin-bottom: 40px;
+}
+
+.glyphicon-th-large {
+    top: -4px;
+}
+
+.dropdownbox {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px 25px;
+    z-index: 999999;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: none;
+    border-radius: 2px 2px 2px 2px;
+    top: 74px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    cursor: default;
+}
+
+.v-align-m {
+    vertical-align: middle;
+}
+
+.pull-reset {
+    float: none !important;
+}
+
+.dropdownbox-profile {
+    right: 75px;
+    width: 275px;
+    padding: 15px 15px 8px 15px;
+    border: 1px solid #d9d9d9;
+}
+
+.select-user-type .select-user-type_small {
+    padding: 0;
+    background: #ebebeb;
+}
+
+.dropdownbox-profile .select-user-type input {
+    display: none;
+    width: 0px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.select-user-type.select-user-type_small input[type=radio ]:not(old) + label.select-user-type_customer {
+    background: url(../images/user-type-small.png) 19px -27px no-repeat;
+    padding-left: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.select-user-type.select-user-type_small input[type=radio ]:not(old) + label {
+    font: 13px/30px 'Open Sans';
+    padding-top: 0;
+    height: 30px;
+    background: url(../images/user-type-small.png) 38px 12px no-repeat;
+    text-align: left;
+}
+
+.select-user-type.select-user-type_small input[type=radio ]:not(old) + label.select-user-type_performer:hover, .select-user-type.select-user-type_small input[type=radio]:not(old):checked + label.select-user-type_performer {
+    background-color: #ffa308;
+    background-position: -102px -28px;
+}
+
+.select-user-type.select-user-type_small input[type=radio ]:not(old) + label.select-user-type_performer {
+    background: url(../images/user-type-small.png) -102px 7px no-repeat;
+    padding-left: 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.dropdownbox ul {
+    list-style: none;
+    width: 100%;
+}
+
+.logoutheader .dropdownbox li {
+    font-size: 14px;
+}
+
+.dropdownbox ul li a {
+    color: #535353;
+    padding: 5px 0;
+    line-height: normal;
+    display: inline-block;
+    font-family: 'Open Sans';
+}
+
+.dropdownbox ul li.divider {
+    border-bottom: 1px solid #ccc;
+    padding-top: 3px;
+    margin-bottom: 3px;
+    line-height: 0px;
+    box-shadow: 0px 1px 0px #fff;
+    -webkit-box-shadow: 0px 1px 0px #fff;
+}
+
+.dropdownbox::before {
+    border-bottom-color: #d9d9d9;
+    top: -21px;
+}
+
+.dropdownbox::after, .dropdownbox::before {
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: -20px;
+    right: 20%;
+}
